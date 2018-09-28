@@ -7,6 +7,9 @@
 
 html{
   background-color: #fff;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 body {
@@ -93,6 +96,15 @@ p {
   font-weight: 400;
   line-height: 150%;
   letter-spacing: 1px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
 }
 
 .switch-lang-area {
