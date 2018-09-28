@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+
+@font-face {
+  font-family: 'Cooper Black';
+  src: url('../fonts/CooperBlackStd.otf') format('woff2');
+}
+
+html{
+  background-color: #fff;
+}
+
+body {
+  color: #707070;
+  margin-top: 1.5%;
+  width: 97.5%;
+  height: 90vh;
+  font-family: "Roboto", sans-serif;
+  background-color:#F8F8F8;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.background img {
+  width: 35%;
+  height: auto;
+  display: block;
+  position: fixed;
+  right: 32%;
+  top: 25%;
+  opacity: 0.05;
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  display: block;
+  bottom: 0px;
+  text-align: center;
+  opacity: 0.5;
+  font-size: 12px;
+  margin: 10px auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 10px 20px;
+  display: block;
+}
+
+h1 {
+  font-family: "Cooper Black", sans-serif;
+  font-size: 80px;
+  color: #201406;
+}
+
+h2 {
+  font-family: "Cooper Black", sans-serif;
+  font-size: 70px;
+  color: #201406;
+}
+
+h3 {
+  font-family: "Cooper Black", sans-serif;
+  font-size: 60px;
+  color: #201406;
+}
+
+h4 {
+  font-family: "Cooper Black", sans-serif;
+  font-size: 45px;
+  color: #201406;
+}
+
+h5 {
+  font-family: "Cooper Black", sans-serif;
+  font-size: 30px;
+  color: #201406;
+}
+
+h6 {
+  font-family: "Cooper Black", sans-serif;
+  font-size: 20px;
+  color: #201406;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  padding: 0px 20px;
+  max-width: 500px;
+  color: #201406;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 1px;
+}
+
+.switch-lang-area {
+  width: 90vw;
+  height: 50px;
+  position: fixed;
+  z-index: 101;
+}
+
+.switch-lang-area .container {
+  width: 90%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.switch-lang-area .container .switch-lang {
+  position: absolute;
+  right: -5%;
+}
+
+.switch-lang-area .container .switch-lang li {
+  display: inline-block;
+  float: left;
+  list-style: none;
+  padding-left: 5px;
+}
+
+
+.switch-lang-area .container .switch-lang li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #707070;
+}
+
+.switch-lang-area .container .switch-lang li a:hover {
+  color: #201406;
+}
+
+.switch-lang-area .container .switch-lang li a:active {
+  color: #201406;
+}
+
+.switch-lang-area .container .switch-lang li a:focus {
+  color: #201406;
+}
+
+.main-menu-area {
+  display: block;
+  position: fixed;
+  width: 97.5vw;
+  height: 84px;
+  background-color: #F8F8F8;
+  z-index: 100;
+}
+
+.main-menu-area .container {
+  width: 90%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-menu-area .container .nav-area {
+  width: 90%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.main-menu-area .container .nav-area .nav {
+  width: 80%;
+  height: 100%;
+  margin: 32px auto;
+  -webkit-padding-start: 80px;
+}
+
+
+.main-menu-area .container .nav-area .nav li {
+  display: inline-block;
+  list-style: none;
+  float: left;
+  padding-right:60px;
+  margin: 5px 10px;
+}
+
+.main-menu-area .container .nav-area .nav li a {
+  text-decoration: none;
+  font-family: "Cooper Black", sans-serif;
+  font-size: 18px;
+  color: #707070;
+}
+
+.main-menu-area .container .nav-area .nav li a:hover {
+  color: #201406;
+}
+
+.main-menu-area .container .nav-area .nav li a:focus {
+  color: #201406;
+}
+
+.main-area {
+  width: 90vw;
+  height: 90vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.main-area .container {
+  width: 90%;
+  height: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#parent {
+  margin-right: auto;
+  margin-left: auto;
+  color: black;
+  width: 100%;
+  height: 90vh;
+  display: block;
+  text-align: center;
+  background: transparent;
+  overflow: scroll;
+  z-index: 3;
+}
+
+#child-div {
+  position: relative;
+  margin-bottom: 375px;
+  color:black;
+  text-align:center;
+}
+
+#child-div:last-child{
+  color: black;
+  visibility: visible;
+  text-align: center;
+}
+
+section {
+  width: 100%;
+  height: auto;
+}
+
+.storia-main-area {
+
+}
+
+.storia-main-area .storia-container {
+  display: inline-grid;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto;
+  overflow-x: scroll;
+
+}
+
+.storia-main-area .storia-container .storia-first-paragraph {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 50px;
+  margin-right: 150px;
+
+}
+
+.storia-main-area .storia-container .storia-first-paragraph .storia-title {
+  position: relative;
+  z-index: 5;
+  top: 175px;
+}
+
+.storia-main-area .storia-container .storia-first-paragraph .row {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto;
+  margin: 15px;
+  z-index: 3;
+}
+
+.storia-main-area .storia-container .storia-first-paragraph .row .storia-paragraph-area {
+  top: 125px;
+  position: relative;
+
+}
+
+.storia-main-area .storia-container .storia-first-paragraph .row .storia-paragraph-area .storia-paragraph {
+  width: 100%;
+  max-width: 700px;
+  min-width: 400px;
+  height: 200px;
+  max-height: 250px;
+  margin-top: 60px;
+  overflow: scroll;
+}
+
+.storia-main-area .storia-container .storia-first-paragraph .row .storia-image-area {
+
+
+}
+
+.storia-main-area .storia-container .storia-first-paragraph .row .storia-image {
+  margin: 15px;
+}
+
+.storia-main-area .storia-container .storia-first-paragraph .row .storia-image img {
+  width: 90%;
+  height: auto;
+  min-width: 400px;
+  height: auto;
+}
+
+.storia-main-area .storia-container .storia-second-paragraph {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 50px;
+  margin-right: 200px;
+
+}
+
+.storia-main-area .storia-container .storia-second-paragraph .storia-title {
+  position: relative;
+  z-index: 5;
+  top: 175px;
+}
+
+.storia-main-area .storia-container .storia-second-paragraph .row {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto;
+  margin: 15px;
+  z-index: 3;
+}
+
+.storia-main-area .storia-container .storia-second-paragraph .row .storia-paragraph-area {
+  top: 125px;
+  position: relative;
+
+}
+
+.storia-main-area .storia-container .storia-second-paragraph .row .storia-paragraph-area .storia-paragraph {
+  width: 100%;
+  max-width: 700px;
+  min-width: 400px;
+  height: 200px;
+  max-height: 250px;
+  margin-top: 60px;
+  overflow: scroll;
+}
+
+.storia-main-area .storia-container .storia-second-paragraph .row .storia-image-area {
+
+
+}
+
+.storia-main-area .storia-container .storia-second-paragraph .row .storia-image {
+  margin: 15px;
+}
+
+.storia-main-area .storia-container .storia-second-paragraph .row .storia-image img {
+  width: 100%;
+  height: auto;
+  min-width: 400px;
+  height: auto;
+}
+
+.chocolate-main-area  {
+
+}
+
+.chocolate-main-area .chocolate-container  {
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.chocolate-main-area .chocolate-container .filter-chocolate-area  {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  justify-content: space-evenly;
+}
+
+.chocolate-main-area .chocolate-container .filter-chocolate-area .filter-title {
+
+
+}
+
+.chocolate-main-area .chocolate-container .filter-chocolate-area .filter-chocolate  {
+  display: inline;
+}
+
+.chocolate-main-area .chocolate-container .filter-chocolate-area .filter-chocolate .filter {
+  float: left;
+}
+
+.chocolate-main-area .chocolate-container .filter-chocolate-area .filter-chocolate .filter input{
+  float: left;
+
+}
+
+.chocolate-main-area .chocolate-container .filter-chocolate-area .filter-chocolate .filter h6{
+  float: left;
+}
+
+.chocolate-main-area .chocolate-container .row  {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  grid-auto-rows: 300px;
+
+}
+
+.chocolate-main-area .chocolate-container .row .chocolate-item  {
+  margin: 10px;
+  padding: 15px;
+
+}
+
+.chocolate-main-area .chocolate-container .row .chocolate-item .chocolate-image-area  {
+
+}
+
+.chocolate-main-area .chocolate-container .row .chocolate-item .chocolate-image-area .chocolate-image {
+  width: 100%;
+  height: auto;
+  min-width: 300px;
+
+}
+
+.chocolate-main-area .chocolate-container .row .chocolate-item .chocolate-image-area .chocolate-image img{
+  width: 100%;
+  height: auto;
+
+}
+.chocolate-main-area .chocolate-container .row .chocolate-item .chocolate-paragraph-area {
+  height: 300px;
+  overflow: hidden;
+  width: 0%;
+  max-width: 300px;
+  background-color: rgb(211, 121, 99);
+  position: relative;
+  top:-305px;
+  transition: 1s ease;
+}
+
+.chocolate-main-area .chocolate-container .row .chocolate-item:nth-child(2n) .chocolate-paragraph-area {
+  height: 300px;
+  overflow: hidden;
+  width: 0%;
+  max-width: 300px;
+  background-color: darkgray;
+  position: relative;
+  top:-305px;
+  transition: 1s ease;
+
+}
+
+
+.chocolate-main-area .chocolate-container .row .chocolate-item:hover .chocolate-paragraph-area {
+  width: 100%;
+
+
+}
+
+.chocolate-main-area .chocolate-container .row .chocolate-item .chocolate-paragraph-area .chocolate-paragraph {
+  width: 300px;
+  margin-top: 50px;
+}
+
+
+.cacao-main-area {
+
+}
+
+.cacao-main-area .cacao-container {
+
+}
+
+.cacao-main-area .cacao-container  .cacao-first-paragraph {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 50px;
+  margin-right: 150px;
+
+}
+
+.cacao-main-area .cacao-container  .cacao-first-paragraph .cacao-title {
+  position: relative;
+  z-index: 5;
+  top: 175px;
+}
+
+.cacao-main-area .cacao-container  .cacao-first-paragraph .row {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 15px;
+  z-index: 3;
+}
+
+.cacao-main-area .cacao-container  .cacao-first-paragraph .row .cacao-paragraph-area {
+  top: 125px;
+  position: relative;
+
+}
+
+.cacao-main-area .cacao-container  .cacao-first-paragraph .row .cacao-paragraph-area .cacao-paragraph {
+  width: 100%;
+  max-width: 700px;
+  min-width: 400px;
+  height: 200px;
+  max-height: 250px;
+  margin-top: 60px;
+  overflow: scroll;
+}
+
+.cacao-main-area .cacao-container  .cacao-first-paragraph .row .cacao-image-area {
+
+
+}
+
+.cacao-main-area .cacao-container  .cacao-first-paragraph .row .cacao-image {
+  margin: 15px;
+}
+
+.storia-main-area .storia-container .storia-first-paragraph .row .storia-image img {
+  width: 90%;
+  height: auto;
+  min-width: 400px;
+  height: auto;
+}
