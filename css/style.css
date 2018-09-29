@@ -100,7 +100,7 @@ p {
 
 ::-webkit-scrollbar {
     width: 0px;
-    background: transparent; 
+    background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -329,6 +329,7 @@ section {
   height: 100%;
   margin: 50px;
   margin-right: 200px;
+  display: none;
 
 }
 
@@ -435,6 +436,7 @@ section {
 }
 
 .chocolate-main-area .chocolate-container .row .chocolate-item .chocolate-image-area  {
+  height: 300px;
 
 }
 
@@ -457,7 +459,7 @@ section {
   max-width: 300px;
   background-color: rgb(211, 121, 99);
   position: relative;
-  top:-305px;
+  top:-300px;
   transition: 1s ease;
 }
 
@@ -468,7 +470,7 @@ section {
   max-width: 300px;
   background-color: darkgray;
   position: relative;
-  top:-305px;
+  top:-300px;
   transition: 1s ease;
 
 }
@@ -498,8 +500,8 @@ section {
   display: block;
   width: 100%;
   height: 100%;
-  margin: 50px;
-  margin-right: 150px;
+  margin-right: auto;
+  margin-left: auto;
 
 }
 
@@ -511,13 +513,12 @@ section {
 
 .cacao-main-area .cacao-container  .cacao-first-paragraph .row {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 50% 50%;
   margin: 15px;
   z-index: 3;
 }
 
 .cacao-main-area .cacao-container  .cacao-first-paragraph .row .cacao-paragraph-area {
-  top: 125px;
   position: relative;
 
 }
@@ -528,13 +529,15 @@ section {
   min-width: 400px;
   height: 200px;
   max-height: 250px;
-  margin-top: 60px;
+  margin-top: 210px;
   overflow: scroll;
 }
 
 .cacao-main-area .cacao-container  .cacao-first-paragraph .row .cacao-image-area {
-
-
+  width: 65%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cacao-main-area .cacao-container  .cacao-first-paragraph .row .cacao-image {
