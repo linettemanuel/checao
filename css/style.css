@@ -151,6 +151,8 @@ p {
 
 .switch-lang-area .container .switch-lang li a:hover {
   color: #201406;
+  transform: scale(1.5);
+  transition: 0.7s ease;
 }
 
 .switch-lang-area .container .switch-lang li a:active {
@@ -189,27 +191,30 @@ p {
   width: 80%;
   height: 100%;
   margin: 32px auto;
+  list-style-type: none;
   -webkit-padding-start: 80px;
 }
 
 
 .main-menu-area .container .nav-area .nav li {
-  display: inline-block;
-  list-style: none;
   float: left;
-  padding-right:60px;
   margin: 5px 10px;
 }
 
 .main-menu-area .container .nav-area .nav li a {
+  display: block;
   text-decoration: none;
   font-family: "Cooper Black", sans-serif;
   font-size: 18px;
   color: #707070;
+  padding: 20px;
+  margin-right: 20px;
 }
 
 .main-menu-area .container .nav-area .nav li a:hover {
   color: #201406;
+  transform: scale(1.2);
+  transition: 0.7s ease;
 }
 
 .main-menu-area .container .nav-area .nav li a:focus {
@@ -247,7 +252,7 @@ p {
 
 #child-div {
   position: relative;
-  margin-bottom: 375px;
+  margin-bottom: 100px;
   color:black;
   text-align:center;
 }
@@ -272,6 +277,10 @@ section {
   justify-content: space-evenly;
   grid-template-columns: auto auto;
   overflow-x: scroll;
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
@@ -500,7 +509,10 @@ section {
 }
 
 .cacao-main-area .cacao-container {
-
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cacao-main-area .cacao-container  .cacao-first-paragraph {
@@ -556,4 +568,160 @@ section {
   height: auto;
   min-width: 400px;
   height: auto;
+}
+
+.contacto-main-area  {
+
+}
+
+.contacto-main-area .contacto-container  {
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+.contacto-main-area .contacto-container .contacto-info {
+  width: 70%;
+  min-width: 370px;
+  height: auto;
+  margin-left: 9%;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  justify-content: space-evenly;
+
+}
+
+.contacto-main-area .contacto-container .contacto-info .social-navbar-area {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacto-main-area .contacto-container .contacto-info .social-navbar-area .container {
+  width: 40px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacto-main-area .contacto-container .contacto-info .social-navbar-area .container .social-navbar {
+  -webkit-padding-start: 0px;
+  margin-top: 275px;
+
+
+}
+
+.contacto-main-area .contacto-container .contacto-info .social-navbar-area .container .social-navbar li {
+  list-style: none;
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+
+
+.contacto-main-area .contacto-container .contacto-info .social-navbar-area .container .social-navbar li a {
+
+}
+
+.contacto-main-area .contacto-container .contacto-info .social-navbar-area .container .social-navbar li a img:hover {
+  transform: scale(1.5);
+  transition: 0.7s ease;
+}
+
+
+.contacto-main-area .contacto-container .contacto-info .social-navbar-area .container .social-navbar li a:focus {
+  fill: rgb(211, 121, 99);
+}
+
+.contacto-main-area .contacto-container .contacto-info .form-contacto-area  {
+  width: 100%;
+  height: auto;
+}
+
+
+.contacto-main-area .contacto-container .contacto-info .form-contacto-area .form-contacto  {
+  width: 100%;
+  min-width: 275px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacto-main-area .contacto-container .contacto-info .form-contacto-area .form-contacto input {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  height: 30px;
+  margin: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-weight: 200;
+  color: darkgray;
+
+}
+
+.contacto-main-area .contacto-container .contacto-info .form-contacto-area .form-contacto input:focus {
+  outline: none;
+  box-shadow: 1px 3px 3px #939292;
+
+}
+.contacto-main-area .contacto-container .contacto-info .form-contacto-area .form-contacto input:-webkit-autofill{
+  -webkit-text-fill-color: #201406;
+  -webkit-font-size: 800;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+
+.contacto-main-area .contacto-container .contacto-info .form-contacto-area .form-contacto .mesaje {
+  height: 250px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px 40px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-weight: 200;
+  color: darkgray;
+  resize: none;
+}
+
+.contacto-main-area .contacto-container .contacto-info .form-contacto-area .form-contacto .mesaje:focus {
+  outline: none;
+  box-shadow: 1px 3px 3px #939292;
+
+}
+
+
+.contacto-main-area .contacto-container .contacto-info .form-contacto-area .form-contacto input::placeholder {
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.contacto-main-area .contacto-container .contacto-info .form-contacto-area .form-contacto button {
+  position: relative;
+  border-radius: 10px;
+  left: 35%;
+  padding: 5px 40px;
+  background-color: #707070;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.contacto-main-area .contacto-container .contacto-info .form-contacto-area .form-contacto button:hover{
+  background-color: #fff;
+  box-shadow: 1px 3px 3px #939292;
+  color: #707070;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.contacto-main-area .contacto-container .contacto-info .form-contacto-area .form-contacto button:focus {
+  outline: none;
 }
