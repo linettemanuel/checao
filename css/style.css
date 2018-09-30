@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Charmonman:400,700&subset=latin-ext');
 
 @font-face {
   font-family: 'Cooper Black';
@@ -62,6 +63,13 @@ h1 {
   font-family: "Cooper Black", sans-serif;
   font-size: 80px;
   color: #201406;
+}
+
+.title {
+  font-family: 'Charmonman', cursive;
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: -20px;
 }
 
 h2 {
@@ -204,7 +212,8 @@ p {
 .main-menu-area .container .nav-area .nav li a {
   display: block;
   text-decoration: none;
-  font-family: "Cooper Black", sans-serif;
+  font-family: 'Charmonman', cursive;
+  font-weight: bold;
   font-size: 18px;
   color: #707070;
   padding: 20px;
@@ -213,12 +222,14 @@ p {
 
 .main-menu-area .container .nav-area .nav li a:hover {
   color: #201406;
-  transform: scale(1.2);
+  transform: scale(1.15);
   transition: 0.7s ease;
+  font-family: "Cooper Black", sans-serif;
 }
 
 .main-menu-area .container .nav-area .nav li a:focus {
   color: #201406;
+  font-family: "Cooper Black", sans-serif;
 }
 
 .main-area {
@@ -274,7 +285,6 @@ section {
 
 .storia-main-area .storia-container {
   display: inline-grid;
-  justify-content: space-evenly;
   grid-template-columns: auto auto;
   overflow-x: scroll;
   width: 90%;
@@ -293,11 +303,12 @@ section {
 
 }
 
-.storia-main-area .storia-container .storia-first-paragraph .storia-title {
+.storia-title {
   position: relative;
   z-index: 5;
-  top: 175px;
+  top: 120px;
 }
+
 
 .storia-main-area .storia-container .storia-first-paragraph .row {
   display: grid;
@@ -307,19 +318,18 @@ section {
   z-index: 3;
 }
 
-.storia-main-area .storia-container .storia-first-paragraph .row .storia-paragraph-area {
+.storia-paragraph-area {
   top: 125px;
   position: relative;
 
 }
 
-.storia-main-area .storia-container .storia-first-paragraph .row .storia-paragraph-area .storia-paragraph {
+.storia-paragraph {
   width: 100%;
   max-width: 700px;
   min-width: 400px;
   height: 200px;
   max-height: 250px;
-  margin-top: 60px;
   overflow: scroll;
 }
 
@@ -345,15 +355,10 @@ section {
   height: 100%;
   margin: 50px;
   margin-right: 200px;
-  display: none;
+
 
 }
 
-.storia-main-area .storia-container .storia-second-paragraph .storia-title {
-  position: relative;
-  z-index: 5;
-  top: 175px;
-}
 
 .storia-main-area .storia-container .storia-second-paragraph .row {
   display: grid;
@@ -363,21 +368,7 @@ section {
   z-index: 3;
 }
 
-.storia-main-area .storia-container .storia-second-paragraph .row .storia-paragraph-area {
-  top: 125px;
-  position: relative;
 
-}
-
-.storia-main-area .storia-container .storia-second-paragraph .row .storia-paragraph-area .storia-paragraph {
-  width: 100%;
-  max-width: 700px;
-  min-width: 400px;
-  height: 200px;
-  max-height: 250px;
-  margin-top: 60px;
-  overflow: scroll;
-}
 
 .storia-main-area .storia-container .storia-second-paragraph .row .storia-image-area {
 
@@ -450,8 +441,11 @@ section {
 
 }
 
-.chocolate-main-area .chocolate-container .row .chocolate-item .chocolate-image-area  {
-
+.chocolate-main-area .chocolate-container .row .chocolate-item .chocolate-image-area  .title{
+  font-family: 'Charmonman', cursive;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0px;
 }
 
 .chocolate-main-area .chocolate-container .row .chocolate-item .chocolate-image-area .chocolate-image {
@@ -466,8 +460,8 @@ section {
   height: auto;
 }
 
-.chocolate-main-area .chocolate-container .row .chocolate-item:hover  .chocolate-image-area .chocolate-image img{
-  transform: scale(1.2);
+.chocolate-main-area .chocolate-container .row .chocolate-item:hover  .chocolate-image-area .chocolate-image img {
+  transform: scale(1.15);
   transition: 1s ease;
 }
 
@@ -528,6 +522,7 @@ section {
 
 .cacao-main-area .cacao-container  .cacao-first-paragraph .row .cacao-paragraph-area {
   position: relative;
+  margin-top: 210px;
 
 }
 
@@ -537,7 +532,6 @@ section {
   min-width: 400px;
   height: 200px;
   max-height: 250px;
-  margin-top: 210px;
   overflow: scroll;
 }
 
