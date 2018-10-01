@@ -154,6 +154,7 @@ p {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   color: #707070;
+  transition: 0.7s ease;
 }
 
 .switch-lang-area .container .switch-lang li a:hover {
@@ -217,6 +218,7 @@ p {
   color: #707070;
   padding: 20px;
   margin-right: 20px;
+  transition: 0.7s ease;
 }
 
 .main-menu-area .container .nav-area .nav li a:hover {
@@ -226,9 +228,15 @@ p {
   font-family: "Cooper Black", sans-serif;
 }
 
-.main-menu-area .container .nav-area .nav li a:focus {
-  color: #201406;
+.main-menu-area .container .nav-area .nav .active {
   font-family: "Cooper Black", sans-serif;
+  color: #201406;
+}
+
+.main-menu-area .container .nav-area .nav .active:hover {
+  font-family: "Cooper Black", sans-serif;
+  color: #201406;
+  transform: none;
 }
 
 .main-area {
@@ -278,6 +286,43 @@ p {
   margin-left: auto;
   margin-right: auto;
   animation: scrollDown 2s ease infinite;
+}
+
+
+.flag-area  {
+  position: absolute;
+  top: 40vh;
+  right: -235px;
+  transition: 2s ease;
+
+}
+
+.flag-area:hover  {
+  position: absolute;
+  top: 40vh;
+  right: 0;
+  transition: 2s ease;
+
+}
+
+.flag-area .flag-area-title {
+
+
+}
+
+.flag-area .flag-area-title p {
+  font-family: 'Charmonman', cursive;
+  font-weight: bold;
+  font-size: 17px;
+
+}
+
+.flag-area .flag-area-image {
+
+}
+
+.flag-area .flag-area-image img {
+
 }
 
 #parent {
@@ -458,7 +503,7 @@ section {
 }
 
 .chocolate-main-area .chocolate-container .filter-chocolate-area  {
-  width: 100%;
+  width: 90%;
   height: auto;
   display: grid;
   grid-template-columns: 25% 75%;
@@ -488,6 +533,10 @@ section {
 }
 
 .chocolate-main-area .chocolate-container .row  {
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: space-evenly;
@@ -495,8 +544,11 @@ section {
 }
 
 .chocolate-main-area .chocolate-container .row .chocolate-item  {
-  margin: 10px;
-  padding: 15px;
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
 
 }
 
@@ -508,9 +560,9 @@ section {
 }
 
 .chocolate-main-area .chocolate-container .row .chocolate-item .chocolate-image-area .chocolate-image {
-  width: 100%;
+  width: 90%;
   height: auto;
-  min-width: 300px;
+  min-width: 200px;
 
 }
 
@@ -775,7 +827,7 @@ section {
 }
 
 .appearUp {
-  animation: appearUp 2.5s ease;
+  animation: appearUp 4s ease-in-out;
 }
 
 .appearLeft {
@@ -812,7 +864,7 @@ section {
 @keyframes appearUp {
   from {
       opacity: 0;
-      transform: translateY(300px);
+      transform: translateY(50px);
 }
 
   to {
