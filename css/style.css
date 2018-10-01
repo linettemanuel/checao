@@ -29,7 +29,6 @@ body {
   background-color:#F8F8F8;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .background img {
@@ -248,6 +247,39 @@ p {
   margin-right: auto;
 }
 
+.main-area .container .arrow-down-area {
+  position: absolute;
+  top: 50vh;
+  left: 8vw;
+}
+
+.main-area .container .arrow-down-area .arrow-down-title {
+  margin-left: -15px;
+  margin-bottom: 10px;
+  width: 40px;
+  height: auto;
+}
+
+.main-area .container .arrow-down-area .arrow-down-title p {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 0px;
+  margin: 0px;
+}
+
+.main-area .container .arrow-down-area .arrow-down-image {
+  width: 7px;
+  height: auto;
+}
+
+.main-area .container .arrow-down-area .arrow-down-image img {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  animation: scrollDown 2s ease infinite;
+}
+
 #parent {
   margin-right: auto;
   margin-left: auto;
@@ -266,6 +298,7 @@ p {
   margin-bottom: 100px;
   color:black;
   text-align:center;
+  opacity: 0;
 }
 
 #child-div:last-child{
@@ -273,6 +306,7 @@ p {
   visibility: visible;
   text-align: center;
 }
+
 
 section {
   width: 100%;
@@ -331,6 +365,31 @@ section {
   height: 200px;
   max-height: 250px;
   overflow: scroll;
+}
+
+.arrow-right-area .arrow-right-title {
+  margin-top: 20px;
+  margin-bottom: -45px;
+}
+
+.arrow-right-area .arrow-right-title p {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+.arrow-right-area .arrow-right-image{
+  width: 7px;
+  height: auto;
+  transform: rotate(-90deg);
+  margin: 0px 50%;
+}
+
+.arrow-right-area .arrow-right-image img {
+  width: 100%;
+  height: auto;
+  animation: scrollRight 2s ease infinite;
 }
 
 .storia-main-area .storia-container .storia-first-paragraph .row .storia-image-area {
@@ -705,4 +764,108 @@ section {
 
 .contacto-main-area .contacto-container .contacto-info .form-contacto-area .form-contacto button:focus {
   outline: none;
+}
+
+.fadeIn {
+  animation: fadeIn 2.5s ease;
+}
+
+.fallDown {
+  animation: fallDown 2.5s ease;
+}
+
+.appearUp {
+  animation: appearUp 2.5s ease;
+}
+
+.appearLeft {
+  animation: appearLeft 4s ease;
+}
+
+.appearRight {
+  animation: appearRight 4s ease;
+}
+
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+}
+
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes fallDown {
+  from {
+      opacity: 0;
+      transform: translateY(-400px);
+}
+
+  to {
+      opacity: 1;
+      transform : translateY(0);
+  }
+}
+
+@keyframes appearUp {
+  from {
+      opacity: 0;
+      transform: translateY(300px);
+}
+
+  to {
+      opacity: 1;
+      transform : translateY(0);
+  }
+}
+
+@keyframes appearLeft {
+  from {
+      opacity: 0;
+      transform: translateX(-400px);
+}
+
+  to {
+      opacity: 1;
+      transform : translateX(0);
+  }
+}
+
+@keyframes appearRight {
+  from {
+      opacity: 0;
+      transform: translateX(400px);
+}
+
+  to {
+      opacity: 1;
+      transform : translateX(0);
+  }
+}
+
+@keyframes scrollDown {
+  from {
+      opacity: 0;
+      transform: translateY(-50px);
+}
+
+  to {
+      opacity: 1;
+      transform : translateY(0);
+  }
+}
+
+
+@keyframes scrollRight {
+  from {
+      opacity: 0;
+      transform: translateY(-50px);
+}
+
+  to {
+      opacity: 1;
+      transform : translateY(10px);
+  }
 }
