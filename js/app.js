@@ -1,28 +1,43 @@
-var body=document.getElementsByTagName("body");
-var parent=document.getElementById("parent");
-var child=document.querySelectorAll("#child-div");
+var body = document.getElementsByTagName("body");
+var parent = document.getElementById("parent");
+var child = document.querySelectorAll("#child-div");
 var last = document.querySelector(".child-last");
 var first = document.querySelector(".first-child");
+var menu = document.querySelector(".nav");
+var menuItems = menu.querySelectorAll(".nav-item");
 
 window.onload = () => {
   parent.children[0].classList.add("fadeIn");
   addClassToChildren(parent.children[0].children, "fadeIn");
   changeOpacity(parent.children[0]);
-  console.log(parent.children[0].classList);
+  changeActiveFields()
 }
-
 
 parent.onscroll = () => {
   child.forEach ( (item, index) => {
 
-    if ((item.getBoundingClientRect().top < 450) && (item.getBoundingClientRect().top > 0) && (index != 0)){
+    if ((item.getBoundingClientRect().top < 600) && (item.getBoundingClientRect().top > 0)){
+      findActiveField(item);
+    }
+
+    if ((item.getBoundingClientRect().top < 600) && (item.getBoundingClientRect().top > 0) && (index != 0)){
       var childrenList = item.children;
       item.classList.add("appearUp");
-      console.log(item.classList);
       addClassToChildren(childrenList, "appearUp");
       changeOpacity(item);
     }
   })
+}
+
+function findActiveField (fieldName) {
+  for (var i = 0; i < menuItems.length; i++) {
+    activeFieldName = fieldName.children[0].attributes[0].value.toLowerCase()
+    if(activeFieldName == menuItems[i].childNodes[0].nodeValue.toLowerCase()){
+      menuItems[i].classList.add("active");
+    } else {
+      menuItems[i].classList.remove("active");
+    }
+  }
 }
 
 function addClassToChildren(e, choosenclass) {
@@ -39,8 +54,18 @@ function changeOpacity(e) {
 }
 
 function removeAnimation(e, choosenclass) {
-  console.log(parent.children[0].classList);
   e.classList.remove(choosenclass);
+}
+
+function changeActiveFields() {
+  for (var i = 0; i < menuItems.length; i++) {
+    menuItems[i].addEventListener("click", (e) => {
+      var current = document.getElementsByClassName("active");
+      console.log(current[0]);
+      current[0].className = current[0].className.replace("active", "");
+      e.target.classList.add("active");
+    });
+  }
 }
 
 /*
