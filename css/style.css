@@ -65,7 +65,7 @@ h1 {
 }
 
 .title {
-  font-family: 'Charmonman', cursive;
+  font-family: "Cooper Black", sans-serif;
   font-size: 45px;
   font-weight: bold;
   margin-bottom: -20px;
@@ -212,7 +212,7 @@ p {
 .main-menu-area .container .nav-area .nav li a {
   display: block;
   text-decoration: none;
-  font-family: 'Charmonman', cursive;
+  font-family: "Cooper Black", sans-serif;
   font-weight: bold;
   font-size: 18px;
   color: #707070;
@@ -311,7 +311,7 @@ p {
 }
 
 .flag-area .flag-area-title p {
-  font-family: 'Charmonman', cursive;
+  font-family: "Cooper Black", sans-serif;
   font-weight: bold;
   font-size: 17px;
 
@@ -553,7 +553,7 @@ section {
 }
 
 .chocolate-main-area .chocolate-container .row .chocolate-item .chocolate-image-area  .title{
-  font-family: 'Charmonman', cursive;
+  font-family: "Cooper Black", sans-serif;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 0px;
